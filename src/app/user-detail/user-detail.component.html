@@ -1,0 +1,53 @@
+<div class="container">
+
+    <h1 style="text-align: center; color: #b4b4b4;">
+        Usuário Selecionado
+    </h1> <br>
+    <div style="margin-top: 10%; margin-left: 25%;">
+
+
+
+        <div style="display: flex;">
+            <span class="ui-float-label">
+                <input style="width: 50px;" id="id" type="text" size="30" [(ngModel)]="id" pInputText maxlength="3"
+                    disabled>
+                <label for="id">Id</label>
+            </span>
+
+            <span class="ui-float-label">
+                <input id="inputNameValue" type="text" size="30" [(ngModel)]="inputNameValue" pInputText disabled>
+                <label for="inputNameValue">Nome</label>
+            </span>
+
+            <span class="ui-float-label">
+                <input id="inputLastNameValue" type="text" size="30" [(ngModel)]="inputLastNameValue" pInputText
+                    disabled>
+                <label for="inputLastNameValue">Sobrenome</label>
+            </span>
+        </div> <br>
+
+        <div style="display: flex; margin-left: 6%;">
+            <span class="ui-float-label">
+                <input id="inputLoginValue" type="text" size="30" [(ngModel)]="inputLoginValue" pInputText disabled>
+                <label for="inputLoginValue">Login</label>
+            </span>
+
+            <span class="ui-float-label">
+                <input id="inputPasswordValue" type="text" size="30" [(ngModel)]="inputPasswordValue" pInputText
+                    disabled>
+                <label for="inputPasswordValue">Senha</label>
+            </span>
+        </div>
+
+        <p id="infoMessage" class="infoMessage"></p>
+
+        <div style="margin-left:47.1%; margin-top: 1%;">
+
+            <button class="myButton" (click)="activeEdit()">Edit</button>
+            <button class="myButton" (click)="deleteUser()">Delete</button>
+            <button id="btnSave" class="myButton" (click)="saveUser()"
+                style="pointer-events: none; background-color:#000 ;">Save</button>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+<nav class="myNavBar">
+    <ul>
+        <li>
+            <a routerLink="" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"
+                class="navBarItem shortText"><span class="fa fa-home"></span> Home</a>
+        </li>
+
+        <li><a routerLink="/users" routerLinkActive="active" class="navBarItem shortText"><span
+                    class="fa fa-users"></span> Users</a>
+        </li>
+
+        <li>
+            <a routerLink="/create" routerLinkActive="active" class="navBarItem"><span class="fa fa-user"></span> Create
+                User</a>
+        </li>
+
+        <li>
+            <a style="pointer-events: none;" [routerLink]="['/user', idUser.value]" routerLinkActive="active"
+                class="navBarItem shortText disabled" id="userId"><span class="fa fa-user"></span> User com Id</a>
+        </li>
+
+        <div class="search">
+            <input #idUser placeholder="Buscar Usuário por Id" [(ngModel)]="inputIdValue" id="searchInput" type="text"
+                maxlength="4">
+            <button (click)="searchUser()" id="searchButton" pButton type="button" label="Search"
+                class="ui-button-rounded ui-button-secondary"></button>
+        </div>
+    </ul>
+</nav>
+
+
+
+
+
+<router-outlet></router-outlet>
+
+
+
+
+<footer class="bodyFooter">
+    <div style="margin-left: 10px; margin-top: 1%;">
+        <a class="fontFooter" href="#">Central de ajuda</a>
+        <a class="fontFooter" href="#">Blog</a>
+        <a class="fontFooter" href="#">Termos de uso</a>
+        <a class="fontFooter" href="#">Política de Privacidade</a>
+    </div>
+    <div id="divIcon">
+        <div id="divText">
+            <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <div class="text">Facebook</div>
+
+        </div>
+        <div id="divText">
+            <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <div class="text">Instagram</div>
+        </div>
+
+        <div id="divText">
+            <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <div class="text">Twitter</div>
+        </div>
+
+        <div id="divText">
+            <a href="#" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+            <div class="text">Youtube</div>
+        </div>
+
+    </div>
+</footer>

@@ -1,0 +1,24 @@
+.myButton {
+    background-color: #333;
+    border: 2px solid rgba(54, 130, 201, 0.5);
+    color: #a9a8a8;
+    padding: 0px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+}
+
+.myButton:hover {
+    color: white;
+}
+
+label {
+    color: #b4b4b4;
+}
+
+.infoMessage {
+    color: #03a803;
+    margin-left: 6%;
+    margin-top: 1%;
+}

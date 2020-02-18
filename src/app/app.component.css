@@ -1,0 +1,140 @@
+.myNavBar {
+    border-bottom: 4px solid rgba(54, 130, 201, 1);
+}
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+      
+li {
+    float: left;
+}
+      
+li a {
+    display: block;
+    color: #a9a8a8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+      
+li a:hover,.active {
+    color: white !important;
+}
+
+
+  
+   .divShortText {
+    position: relative;
+    list-style: none;
+    transition: 1s;
+    margin-left: -5px;
+  }
+  
+   .divShortText .shortText {
+    width: 0;
+    left: 70%;
+    margin-left: 8px;
+    transition: 1s;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #fff;
+  }
+  
+   .divShortText:hover .shortText {
+    width: 90px;
+    margin-left: 8px;
+    text-align: left;
+    left: 40%;
+    color: #000000
+  }
+
+  .divShortText:hover .shortText #userId {
+    width: 120px;
+  }
+
+.search{
+    position: absolute;
+    right: 0px;
+    top: 2%;
+}
+
+#searchInput {
+    width: 70%;
+    font-size: 12px;
+}
+
+#searchButton {
+    width: 24%;
+    height: 20px;
+    font-size: 8px;
+    text-align: center;
+    top: 0px;
+}
+
+.bodyFooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    border-top: 4px solid rgba(54, 130, 201, 1);
+    color: white;
+    text-align: center;
+    height: 70px;
+  }
+  
+  .fontFooter{
+    margin-right: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+ 
+
+  #divIcon {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+  }
+  
+  #divIcon #divText {
+    position: relative;
+    list-style: none;
+    text-align: center;
+    width: 50px;
+    cursor: pointer;
+    top:-25px;
+  }
+  
+  #divIcon #divText .text {
+    position: absolute;
+    width: 0;
+    left: 50%;
+    margin-left: 0;
+    transition: 1s;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 10px;
+    color: #fff;
+  }
+  
+  #divIcon #divText .fa {
+    font-size: 2em;
+    color: #fff;
+  }
+  
+  #divIcon #divText:hover .text {
+    width: 120px;
+    margin-left: -60px;
+  }

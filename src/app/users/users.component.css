@@ -1,0 +1,20 @@
+th {
+    position: sticky;
+    top: -1px;
+    background-color: #b1b1b1;
+    border-bottom: #e2e2e2 2px solid;
+}
+
+td {
+    background-color:white;
+}
+
+table {
+    text-align: center;
+}
+
+h1 {
+    color: #b4b4b4;
+    text-align: center;
+    font-size: 30px;
+}

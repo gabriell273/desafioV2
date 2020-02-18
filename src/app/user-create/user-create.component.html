@@ -1,0 +1,44 @@
+<div class="container">
+    <h1 style="text-align: center; color: #b4b4b4;">
+        Criar Usuário
+    </h1> <br>
+    <div style="margin-top: 10%; margin-left: 25%;">
+
+
+
+        <div style="display: flex; margin-left: 6%;">
+
+            <span class="ui-float-label">
+                <input id="inputNameValue" type="text" size="30" [(ngModel)]="inputNameValue" pInputText required>
+                <label for="inputNameValue">Nome</label>
+            </span>
+
+            <span class="ui-float-label">
+                <input id="inputLastNameValue" type="text" size="30" [(ngModel)]="inputLastNameValue" pInputText>
+                <label for="inputLastNameValue">Sobrenome</label>
+            </span>
+        </div> <br>
+
+        <div style="display: flex; margin-left: 6%;">
+            <span class="ui-float-label">
+                <input id="inputLoginValue" type="text" size="30" [(ngModel)]="inputLoginValue" pInputText>
+                <label for="inputLoginValue">Login</label>
+            </span>
+
+            <span class="ui-float-label">
+                <input id="inputPasswordValue" type="text" size="30" [(ngModel)]="inputPasswordValue" pInputText>
+                <label for="inputPasswordValue">Senha</label>
+            </span>
+        </div>
+
+        <p id="infoMessage" class="infoMessage"></p>
+
+        <div style="margin-left: 52.5%; margin-top: 1%;">
+
+            <button class="myButton" (click)="createUser()">Save</button>
+            <button class="myButton" (click)="clearInput()">Cancel</button>
+
+        </div>
+    </div>
+
+</div>
